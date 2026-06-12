@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title> progrmacaoweb </title>
+    <link rel="stylesheet" href ='pw.css' >
+</head>
+    
+    <body>
+
+     <header>
+     <h4>Programação Web</h4>
+     </header>
+
+   
+
+        <p> 
+        digite uma palavra:  <input type="text" id="input" placeholder="digite aqui...">
+        
+        
+        <h4> calculadora </h4>
+
+        <p> digite um numero: </p>
+        <input type="number" id="numero1" aria-placeholder="digite aqui">
+        <p> digite um numero: </p>
+        <input type="number" id="numero2" aria-placeholder="digite aqui">
+
+        <p id='resultado'></p>
+        <br><br>
+       <button type="button" id="butao" aria-placeholder="mostrar" onclick='exibir()'> mostrar </button>
+   
+
+     <script>
+        function exibir() {
+         let palavra = document.getElementById('input').value;
+         let num1 = Number(document.getElementById('numero1').value);
+         let num2 = Number(document.getElementById('numero2').value);
+
+         let soma = num1 + num2;
+         let sub = num1 - num2;
+         let mult = num1 * num2;
+         let div = num1 / num2;
+
+         document.getElementById('resultado').innerText = 
+         'palavra digitada:' + palavra +
+         ' |resultado da soma:' + soma +
+         ' |resultado da subtração:' + sub +
+         ' |resultado da multiplicação:'+ mult +
+         ' |resultado da divisão:' + div;
+        }
+     </script>
+
+     <section>
+
+        <article>
+         <img src="a44b144c8860958b8c13bca6c36acc52.jpg" alt="darwin">
+
+        </article>
+     </section>
+    </body>
+   
